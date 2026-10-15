@@ -12,7 +12,8 @@
       "strict": false,
       "skills": [
         "./skills/build-walkthrough",
-        "./skills/narrated-explainer"
+        "./skills/narrated-explainer",
+        "./skills/narration-handoff"
       ]
     }
   ]
