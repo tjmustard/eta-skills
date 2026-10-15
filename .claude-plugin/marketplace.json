@@ -16,6 +16,15 @@
         "./skills/narration-handoff",
         "./skills/page-to-video"
       ]
+    },
+    {
+      "name": "writing",
+      "description": "Skills for writing and prompt design",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/prompt-engineer"
+      ]
     }
   ]
 }
