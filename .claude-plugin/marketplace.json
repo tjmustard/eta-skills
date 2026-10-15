@@ -15,7 +15,8 @@
         "./skills/narrated-explainer",
         "./skills/narration-handoff",
         "./skills/page-to-video",
-        "./skills/tts-narration-build"
+        "./skills/tts-narration-build",
+        "./skills/render-page-to-video"
       ]
     },
     {

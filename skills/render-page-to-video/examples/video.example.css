@@ -1,0 +1,17 @@
+/* EXAMPLE of the stylesheet injected for video mode (--css). The selectors are
+   the original page's. The idea to keep: hide everything that only makes sense
+   for a human at a keyboard (narration text, deep-dive buttons, play/pause,
+   hints, settings) and keep what belongs in a film (title bar, scrub/timecode
+   bar, per-scene readouts). Check both lists against the page you are filming. */
+#digs, #capWrap, #playBtn, #hint, #title, #sheet, #sbWrap,
+#qualBtn, #voiceBtn, #restartBtn { display:none !important; }
+#rail{ padding:0 26px 22px !important;
+  background:linear-gradient(to top,rgba(6,7,10,.90) 16%,rgba(6,7,10,.52) 58%,transparent) !important; }
+#railInner{ max-width:1120px !important; gap:0 !important; }
+#transport{ gap:0 !important; }
+#scrubMeta{ font-size:11.5px !important; letter-spacing:.09em !important; }
+#scrub{ height:20px !important; }
+#toprail{ padding:18px 26px !important; }
+#toprail .brand{ font-size:13px !important; }
+#readout{ top:62px !important; left:26px !important; font-size:13px !important; }
+#vignette{ opacity:.9 }

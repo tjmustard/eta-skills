@@ -1,0 +1,9 @@
+{
+  "fps_default": 30,
+  "total": 30.0,
+  "scenes": [
+    {"n": 1, "dur": 10.0, "audio": "clip-01.m4a"},
+    {"n": 2, "dur": 12.0, "audio": "clip-02.m4a"},
+    {"n": 3, "dur": 8.0,  "audio": "clip-03.m4a"}
+  ]
+}
