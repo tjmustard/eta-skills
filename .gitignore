@@ -1,0 +1,22 @@
+# Personal outputs (mirrors tools/denylist.txt)
+taste-master.md
+*[Ll]iving*[Mm]aster*[Pp]lan*
+
+# Build
+dist/
+.venv/
+__pycache__/
+*.pyc
+.ruff_cache/
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
