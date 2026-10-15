@@ -1,4 +1,5 @@
 <div align="center">
+    <img src="./media/logo.webp" alt="eta-skills logo" width="200" height="200"/>
     <h1>eta-skills</h1>
     <h3><em>Agent skills for research planning, software design, and writing.</em></h3>
 </div>
