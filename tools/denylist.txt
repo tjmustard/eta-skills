@@ -1,0 +1,6 @@
+# Filenames/globs that must never appear in this repo (personal outputs).
+# Matched with fnmatch against each file's basename and its repo-relative path.
+# Mirrored in .gitignore; `make validate` fails if any tracked-tree file matches.
+taste-master.md
+# PROVISIONAL: confirm against the co-researcher skill's real filename pattern once imported.
+*[Ll]iving*[Mm]aster*[Pp]lan*
