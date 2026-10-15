@@ -38,6 +38,7 @@ A single repository of **agent skills** for research planning, software design, 
 | [build-walkthrough](skills/build-walkthrough) | media | Turn a finished agent-assisted project into a published walkthrough plus the skills that let someone reproduce it. Use when documenting how something was built, writing up your own work as a case study, or packaging a workflow so other people can run it. |
 | [narrated-explainer](skills/narrated-explainer) | media | Build a narrated, scene-based explainer page that plays like a short film: timed WebGL or canvas scenes, voice-over, a scrub bar, and deep-dive panels. Use for interactive explainers and animated walkthroughs of a process. |
 | [narration-handoff](skills/narration-handoff) | media | Hand a narration script to a text-to-speech run that happens elsewhere, then verify what comes back. Use when generating voice-over outside the session, or when re-recorded audio needs checking for actual change. |
+| [page-to-video](skills/page-to-video) | media | Record a timed, animated web page to a narrated video file: deterministic frame capture, audio track assembly, and verification of the result. Use when turning an animated page, explainer or dashboard into an MP4. |
 <!-- catalog:end -->
 
 ## ⚡ Get Started

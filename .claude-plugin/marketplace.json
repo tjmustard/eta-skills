@@ -13,7 +13,8 @@
       "skills": [
         "./skills/build-walkthrough",
         "./skills/narrated-explainer",
-        "./skills/narration-handoff"
+        "./skills/narration-handoff",
+        "./skills/page-to-video"
       ]
     }
   ]
