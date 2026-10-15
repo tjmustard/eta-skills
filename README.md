@@ -52,7 +52,8 @@ A single repository of **agent skills** for research planning, software design, 
     ```
 2.  Install a bundle:
     ```
-    /plugin install <bundle>@eta-skills
+    /plugin install media@eta-skills
+    /plugin install writing@eta-skills
     ```
 3.  Pick up later changes:
     ```
