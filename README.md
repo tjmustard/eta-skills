@@ -36,6 +36,7 @@ A single repository of **agent skills** for research planning, software design, 
 | Skill | Bundle | Description |
 | --- | --- | --- |
 | [build-walkthrough](skills/build-walkthrough) | media | Turn a finished agent-assisted project into a published walkthrough plus the skills that let someone reproduce it. Use when documenting how something was built, writing up your own work as a case study, or packaging a workflow so other people can run it. |
+| [narrated-explainer](skills/narrated-explainer) | media | Build a narrated, scene-based explainer page that plays like a short film: timed WebGL or canvas scenes, voice-over, a scrub bar, and deep-dive panels. Use for interactive explainers and animated walkthroughs of a process. |
 <!-- catalog:end -->
 
 ## ⚡ Get Started
