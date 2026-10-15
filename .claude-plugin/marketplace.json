@@ -4,5 +4,15 @@
     "name": "tjmustard"
   },
   "description": "Agent skills for research planning, software design, and writing",
-  "plugins": []
+  "plugins": [
+    {
+      "name": "media",
+      "description": "Skills for building and publishing narrated explainers, walkthroughs, and videos",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/build-walkthrough"
+      ]
+    }
+  ]
 }

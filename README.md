@@ -35,7 +35,7 @@ A single repository of **agent skills** for research planning, software design, 
 <!-- catalog:start -->
 | Skill | Bundle | Description |
 | --- | --- | --- |
-| _none yet_ | | |
+| [build-walkthrough](skills/build-walkthrough) | media | Turn a finished agent-assisted project into a published walkthrough plus the skills that let someone reproduce it. Use when documenting how something was built, writing up your own work as a case study, or packaging a workflow so other people can run it. |
 <!-- catalog:end -->
 
 ## ⚡ Get Started
