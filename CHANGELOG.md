@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- **Skills**: `build-walkthrough`, `narrated-explainer`, `narration-handoff`, and `page-to-video`, `tts-narration-build`, and `render-page-to-video` in the `media` bundle; `prompt-engineer` in the `writing` bundle.
+- **Skills**: `build-walkthrough`, `narrated-explainer`, `narration-handoff`, and `page-to-video`, `tts-narration-build`, and `render-page-to-video` in the `media` bundle; `prompt-engineer`, `article-outliner`, and `article-interviewer` in the `writing` bundle.
 - **Repository scaffold**: Flat `skills/` layout, `template/SKILL.md` starter, `prompts/` for unpromoted prompts, and `.claude-plugin/marketplace.json` (marketplace `eta-skills`, no bundles yet).
 - **`tools/` tooling**: `validate.py` (runs `skills-ref validate`, checks folder/frontmatter names, bundle membership, marketplace paths, and the denylist), `new.py`, `package.py`, and `catalog.py`, exposed as `make validate`, `make new`, `make package`, and `make catalog`.
 - **`tools/denylist.txt`**: Blocks `taste-master.md` and a provisional Living Master Plan filename pattern, mirrored in `.gitignore`.

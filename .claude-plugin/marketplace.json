@@ -25,7 +25,9 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/prompt-engineer"
+        "./skills/prompt-engineer",
+        "./skills/article-outliner",
+        "./skills/article-interviewer"
       ]
     }
   ]
