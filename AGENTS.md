@@ -5,7 +5,7 @@ Conventions for any agent or human working in this repo.
 ## Adding a skill
 
 1. `make new name=<skill-name>` creates `skills/<skill-name>/SKILL.md` from `template/SKILL.md` and prints the bundle entry.
-2. Write the skill. Put long reference material in `references/` (linked one level deep from SKILL.md), runnable code in `scripts/`, fill-in templates in `assets/`. Create these dirs only when needed. Keep SKILL.md under 500 lines.
+2. Write the skill. Put long reference material in `references/` (linked one level deep from SKILL.md), runnable code in `scripts/`, fill-in templates in `assets/`, regression cases and test fixtures in `evals/`. Create these dirs only when needed. Keep SKILL.md under 500 lines.
 3. Add `./skills/<skill-name>` to a bundle's `skills` list in `.claude-plugin/marketplace.json`. Every skill must be in at least one bundle.
 4. `make validate`
 5. `make catalog` and commit the README change.

@@ -8,12 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- **Skills**: `build-walkthrough`, `narrated-explainer`, `narration-handoff`, and `page-to-video`, `tts-narration-build`, and `render-page-to-video` in the `media` bundle; `prompt-engineer`, `article-outliner`, and `article-interviewer` in the `writing` bundle.
+- **Skills**: `build-walkthrough`, `narrated-explainer`, `narration-handoff`, and `page-to-video`, `tts-narration-build`, and `render-page-to-video` in the `media` bundle; `prompt-engineer`, `article-outliner`, and `article-interviewer` in the `writing` bundle; `adversarial-agent-hardening` and `cross-model-judge-eval` in the new `agent-eval` bundle.
+- **`adversarial-agent-hardening` evals**: `evals/regressions.md` (full-run and exit-decision cases) and `evals/fixtures.sh` (sandboxed test targets).
 - **Repository scaffold**: Flat `skills/` layout, `template/SKILL.md` starter, `prompts/` for unpromoted prompts, and `.claude-plugin/marketplace.json` (marketplace `eta-skills`, no bundles yet).
 - **`tools/` tooling**: `validate.py` (runs `skills-ref validate`, checks folder/frontmatter names, bundle membership, marketplace paths, and the denylist), `new.py`, `package.py`, and `catalog.py`, exposed as `make validate`, `make new`, `make package`, and `make catalog`.
 - **`tools/denylist.txt`**: Blocks `taste-master.md` and a provisional Living Master Plan filename pattern, mirrored in `.gitignore`.
 - **CI**: `.github/workflows/validate.yml` runs `make validate`, a catalog drift check, and a gitleaks secret scan on push and pull request.
 - **Docs**: `README.md`, `AGENTS.md`, `CLAUDE.md`, and `prompts/README.md`.
+
+### Changed
+- **Scope**: README tagline, intro, and the marketplace description now include agent evaluation; README lists the `agent-eval` install command.
+- **Skill layout**: `evals/` (regression cases and test fixtures) documented as an optional skill directory in the README tree and `AGENTS.md`.
 
 ### Notes
 - `skills-ref` has no PyPI release; it is pinned by git commit in `pyproject.toml`.

@@ -3,7 +3,7 @@
   "owner": {
     "name": "tjmustard"
   },
-  "description": "Agent skills for research planning, software design, and writing",
+  "description": "Agent skills for research planning, software design, writing, and agent evaluation",
   "plugins": [
     {
       "name": "media",
@@ -28,6 +28,16 @@
         "./skills/prompt-engineer",
         "./skills/article-outliner",
         "./skills/article-interviewer"
+      ]
+    },
+    {
+      "name": "agent-eval",
+      "description": "Skills for evaluating, red-teaming, and hardening agents and skills",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/adversarial-agent-hardening",
+        "./skills/cross-model-judge-eval"
       ]
     }
   ]

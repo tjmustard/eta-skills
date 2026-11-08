@@ -1,7 +1,7 @@
 <div align="center">
     <img src="./media/logo.webp" alt="eta-skills logo" width="200" height="200"/>
     <h1>eta-skills</h1>
-    <h3><em>Agent skills for research planning, software design, and writing.</em></h3>
+    <h3><em>Agent skills for research planning, software design, writing, and agent evaluation.</em></h3>
 </div>
 
 <p align="center">
@@ -28,16 +28,18 @@
 
 ## 🤔 What is eta-skills?
 
-A single repository of **agent skills** for research planning, software design, and writing. Every skill conforms to the [Agent Skills specification](https://agentskills.io/specification) and is validated in CI. Skills are grouped into **bundles** (Claude Code plugins) listed in `.claude-plugin/marketplace.json`, so each skill exists once and is installable everywhere.
+A single repository of **agent skills** for research planning, software design, writing, and agent evaluation. Every skill conforms to the [Agent Skills specification](https://agentskills.io/specification) and is validated in CI. Skills are grouped into **bundles** (Claude Code plugins) listed in `.claude-plugin/marketplace.json`, so each skill exists once and is installable everywhere.
 
 ## 📚 Skills
 
 <!-- catalog:start -->
 | Skill | Bundle | Description |
 | --- | --- | --- |
+| [adversarial-agent-hardening](skills/adversarial-agent-hardening) | agent-eval | Iteratively harden agents, skills, instructions, and tool calling schemas using a generate-critique-patch loop with independent audits, up to fixed pass, time, and run limits. Use when the user wants to stress-test, evaluate, red-team, or refine agent prompts, tool signatures, or workflows. |
 | [article-interviewer](skills/article-interviewer) | writing | Interview the user section by section to turn their outline into a finished article or blog post in their voice, then run a full-article flow edit with an itemized change list. Use when the user has an outline and wants to be interviewed, asked questions per section, or co-write an article, blog post, essay, newsletter, or LinkedIn post from it. When the user has only a topic or rough notes, the article-outliner skill comes first. |
 | [article-outliner](skills/article-outliner) | writing | Help the user turn a topic, idea, or rough notes into an approved article outline with a thesis, context, and section-by-section plan, formatted for the article-interviewer skill. Use when the user wants to outline, plan, or structure an article, blog post, essay, newsletter, or LinkedIn post, or has an idea or notes but no outline yet. When the user already has an outline and wants to start writing, use article-interviewer instead. |
 | [build-walkthrough](skills/build-walkthrough) | media | Turn a finished agent-assisted project into a published walkthrough plus the skills that let someone reproduce it. Use when documenting how something was built, writing up your own work as a case study, or packaging a workflow so other people can run it. |
+| [cross-model-judge-eval](skills/cross-model-judge-eval) | agent-eval | Evaluate, score, and benchmark agent outputs, skills, and code using an ensemble panel of heterogeneous LLMs from different model families. Use when assessing agent reliability across frontier and open-source models, mitigating single-model evaluation bias, or running jury/consensus-based quality gates. |
 | [narrated-explainer](skills/narrated-explainer) | media | Build a narrated, scene-based explainer page that plays like a short film: timed WebGL or canvas scenes, voice-over, a scrub bar, and deep-dive panels. Use for interactive explainers and animated walkthroughs of a process. |
 | [narration-handoff](skills/narration-handoff) | media | Hand a narration script to a text-to-speech run that happens elsewhere, then verify what comes back. Use when generating voice-over outside the session, or when re-recorded audio needs checking for actual change. |
 | [page-to-video](skills/page-to-video) | media | Record a timed, animated web page to a narrated video file: deterministic frame capture, audio track assembly, and verification of the result. Use when turning an animated page, explainer or dashboard into an MP4. |
@@ -58,6 +60,7 @@ A single repository of **agent skills** for research planning, software design, 
     ```
     /plugin install media@eta-skills
     /plugin install writing@eta-skills
+    /plugin install agent-eval@eta-skills
     ```
 3.  Pick up later changes:
     ```
@@ -89,7 +92,8 @@ eta-skills/
 │       ├── SKILL.md
 │       ├── references/               # only if needed
 │       ├── scripts/                  # only if needed
-│       └── assets/                   # templates the skill fills in
+│       ├── assets/                   # templates the skill fills in
+│       └── evals/                    # regression cases and fixtures, only if needed
 ├── template/SKILL.md                 # starter for new skills (outside skills/ so tools never load it)
 ├── prompts/                          # standalone prompts not yet promoted to skills
 ├── tools/                            # validation, catalog, packaging, denylist
