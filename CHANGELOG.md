@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Scope**: README tagline, intro, and the marketplace description now include agent evaluation; README lists the `agent-eval` install command.
 - **Skill layout**: `evals/` (regression cases and test fixtures) documented as an optional skill directory in the README tree and `AGENTS.md`.
 - **`article-interviewer`**: Tracks the user's style rules across the session, accepts source material and pasted drafts, offers a promo post, image prompts and a closing question at delivery, and can update a personal context document on request. Hardened against invented details and fabrication on request; regression cases are in `evals/regressions.md`.
+- **`article-interviewer` versions and context**: Drafts 2–3 labeled versions of each section (or the number the user asks for), takes a personal context document as an optional input and fact source, and asks for pasted text when a source link can't be opened. The no-invented-content rule now covers every piece of article text, including single drafts, revisions, `[TK]` drafts, headlines and extras, and counts added framing, opinions and contrast connectors as claims.
 
 ### Notes
 - `skills-ref` has no PyPI release; it is pinned by git commit in `pyproject.toml`.
