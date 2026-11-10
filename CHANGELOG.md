@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- **Skills**: `build-walkthrough`, `narrated-explainer`, `narration-handoff`, and `page-to-video`, `tts-narration-build`, and `render-page-to-video` in the `media` bundle; `prompt-engineer`, `article-outliner`, and `article-interviewer` in the `writing` bundle; `adversarial-agent-hardening` and `cross-model-judge-eval` in the new `agent-eval` bundle.
+- **Skills**: `build-walkthrough`, `narrated-explainer`, `narration-handoff`, and `page-to-video`, `tts-narration-build`, and `render-page-to-video` in the `media` bundle; `prompt-engineer`, `article-outliner`, `article-interviewer`, and `comment-drafter` in the `writing` bundle; `adversarial-agent-hardening` and `cross-model-judge-eval` in the new `agent-eval` bundle.
 - **`adversarial-agent-hardening` evals**: `evals/regressions.md` (full-run and exit-decision cases) and `evals/fixtures.sh` (sandboxed test targets).
 - **Repository scaffold**: Flat `skills/` layout, `template/SKILL.md` starter, `prompts/` for unpromoted prompts, and `.claude-plugin/marketplace.json` (marketplace `eta-skills`, no bundles yet).
 - **`tools/` tooling**: `validate.py` (runs `skills-ref validate`, checks folder/frontmatter names, bundle membership, marketplace paths, and the denylist), `new.py`, `package.py`, and `catalog.py`, exposed as `make validate`, `make new`, `make package`, and `make catalog`.
