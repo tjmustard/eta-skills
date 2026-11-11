@@ -28,7 +28,9 @@
         "./skills/prompt-engineer",
         "./skills/article-outliner",
         "./skills/article-interviewer",
-        "./skills/comment-drafter"
+        "./skills/comment-drafter",
+        "./skills/taste-interviewer",
+        "./skills/voice-card-builder"
       ]
     },
     {
