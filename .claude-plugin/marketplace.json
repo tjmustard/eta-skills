@@ -42,6 +42,15 @@
         "./skills/adversarial-agent-hardening",
         "./skills/cross-model-judge-eval"
       ]
+    },
+    {
+      "name": "research",
+      "description": "Skills for running research and engineering projects",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/research-partner"
+      ]
     }
   ]
 }
