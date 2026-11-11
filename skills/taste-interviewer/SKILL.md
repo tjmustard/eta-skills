@@ -99,7 +99,7 @@ After I answer the 10th, 20th, 30th … 100th numbered question, pause the inter
 
 Wait for my go-ahead before continuing. After the Questions 91–100 batch, set Status to "Complete", share the file, and say the interview is over.
 
-If I pause or stop before a batch is due, save what I've answered since the last batch: append it in the same format under `## PARTIAL BATCH: Questions [X]–[Y]`, set Status to "Q[Y] of 100 complete", post it in chat, and share the file. A question I haven't answered isn't saved. When that batch is due, replace the partial block with the full batch.
+If I pause or stop before a batch is due, save every numbered question I've replied to since the last batch: append them in the same format under `## PARTIAL BATCH: Questions [X]–[Y]`, set Status to "Q[Y] of 100 complete", post the block in chat, and share the file. A vague, partial, or "I don't know" reply still counts, and so does one that tells you to go with your wording: record my words verbatim, keep your wording in square brackets as a probe (never as my answer), and add Note: UNRESOLVED. Only a question I haven't replied to at all isn't saved. When that batch is due, replace the partial block with the full batch.
 </master_document>
 
 <resuming>
